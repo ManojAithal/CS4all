@@ -22,3 +22,25 @@ class Rational:
 		newNumerator = self.numerator*other.denominator
 		newDenominator = self.denominator*other.numerator
 		return Rational(newNumerator,newDenominator)
+	def __eq__(self,other):
+		# overloading == operator
+		return self.numerator*other.denominator == other.numerator*self.denominator
+	def __gt__(self,other):
+		# overloading > operator
+                return self.numerator*other.denominator > other.numerator*self.denominator
+	def __lt__(self,other):
+		# overloading < operator
+                return self.numerator*other.denominator < other.numerator*self.denominator
+	def __ge__(self,other):
+		# overloading >= operator
+                return self.numerator*other.denominator >= other.numerator*self.denominator
+	def __le__(self,other):
+		# overloading <= operator
+                return self.numerator*other.denominator <= other.numerator*self.denominator
+	def __ne__(self,other):
+		# overloading != operator
+                return self.numerator*other.denominator != other.numerator*self.denominator
+
+
+
+
