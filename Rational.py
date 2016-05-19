@@ -40,7 +40,8 @@ class Rational:
 	def __ne__(self,other):
 		# overloading != operator
                 return self.numerator*other.denominator != other.numerator*self.denominator
-
-
+	def __str__(self):
+		# overloading the str method for printing Rational numbers
+		return str(self.numerator)+"/"+str(self.denominator)
 
 
